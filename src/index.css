@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/*color principal*/
+body {
+  background-color: #0F172A;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*ajustes responsive*/
+@media (max-width: 850px) {
+  .layout-principal {
+    flex-direction: column !important;
+  }
+  .menu-lateral {
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 20px !important;
+  }
+  .contenedor-main, .contenedor-detalle {
+    padding: 25px 20px !important;
+  }
+  .grid-tres-cards, .grid-detalle {
+    grid-template-columns: 1fr !important;
+  }
+  .grid-horas {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
